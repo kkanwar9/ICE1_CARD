@@ -29,15 +29,17 @@ public class CardTrick {
             System.out.println(card.getSuit() + " " + card.getValue());
         }
         
-        System.out.print("Enter a card value (1-13): ");
-        int userValue = scanner.nextInt();
-        System.out.print("Enter a suit (0-3 where: 0=Hearts, 1=Diamonds, 2=Clubs, 3=Spades): ");
-        int userSuitIndex = scanner.nextInt();
+      // System.out.print("Enter a card value (1-13): ");
+     // int userValue = scanner.nextInt();
+     //  System.out.print("Enter a suit (0-3 where: 0=Hearts, 1=Diamonds, 2=Clubs, 3=Spades): ");
+      //  int userSuitIndex = scanner.nextInt();
         
-        String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
-        String userSuit = suits[userSuitIndex];
+       // String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
+       // String userSuit = suits[userSuitIndex];
         
-        Card userCard = new Card(userSuit, userValue);
+        // Card userCard = new Card(userSuit, userValue);
+
+        Card userCard = new Card("Hearts", 7);
         
         boolean found = false;
         for (Card card : magicHand) {
